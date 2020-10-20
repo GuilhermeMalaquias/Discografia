@@ -20,7 +20,6 @@ def musica_list(request):
         'musicas_titulo': musicas_titulo,
         'musica_list': musica_list,
         }
-    print(context)
     return render(request, template_name, context)
 
 def musica_new(request):
