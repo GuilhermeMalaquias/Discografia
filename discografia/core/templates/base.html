@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="{% static 'css/image/logo.jpeg' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <title>Discografia</title>
+</head>
+<body>
+    <header>
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+                <a class="navbar-brand" href="{% url 'index' %}">
+                <img src="{% static 'css/image/disco.webp' %}" width="40" height="35" class="d-inline-block align-top" alt="">
+                    Discografia
+                </a>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'disco:musicalist' %}">
+                            <i class="fas fa-list-ul"></i> Musicas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'disco:relatorio' %}">
+                            <i class="fas fa-chart-bar"></i> Relatorio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'disco:musica_new' %}"> 
+                            <i class="fas fa-plus"></i> Nova Musica
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        {% block musicas %}
+        {% endblock %}
+        {% block index %}
+        {% endblock %}
+        {% block editmusicas %}
+        {% endblock %}
+        {% block new %}
+        {% endblock %}
+        {% block charts %}
+        {% endblock %}
+    </main>
+    <div class="container-fluid" id="footer">
+        <footer class="page-footer">
+            <div class="container-fluid text-center">
+                <div class="row">
+                    <div class="col-8 col-xs-12">
+                        <h5 >LGBTQIA+
+                            <img src="{% static 'css/image/LGBTQIA+.png' %}" width="40" height="35">
+                        </h5>
+                        <p>De que adianta desenvolver um "Software", Se nao conseguimos ao menos ser um humano.
+                            <img src="{% static 'css/image/ant-suicidio.jpeg' %}" width="40" height="25">
+                        </p>
+                    </div>
+                <div class="col-4 col-xs-12">
+                    <ul class="icon_menu">
+                        <li>
+                            <p>REDES SOCIAIS</p>
+                        </li>
+                        <li>
+                            <a href="https://bit.ly/GuilhermeIG" >
+                                <i class="fab fa-instagram-square" id="icon-ig"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://bit.ly/GuilhermeLinkedIn" >
+                                <i class="fab fa-linkedin" id="icon-linkedin"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://bit.ly/GuilhermeGit" >
+                                <i class="fab fa-github-square" id="icon-git"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="is">
+                <footer class="page-footer" id="cop">
+                    <div class="row">
+                        <div class="col-6">
+                                <div class="footer-copyright text-center py-1">
+                                    <li>
+                                        <p>DESENVOLVIDO POR</p>
+                                    </li> 
+                                    <li>
+                                        <p>Guilherme Malaquias da Silva</p>
+                                    </li> 
+                                </div>  
+                        </div>
+                        <div class="col-6 text-center py-1">
+                            <li>
+                                <p>EMAIL</p>
+                            </li>
+                            <li>
+                                <p>silvaam.guilherme@gmail.com</p>
+                            </li>
+                        </div>
+                    </div>
+                    </div>               
+                </footer>
+        </div>
+    </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/5dc543cb0c.js" crossorigin="anonymous"></script>
+</html>

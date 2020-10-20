@@ -1,0 +1,13 @@
+venv/
+.vscode/
+CriptoBot/__pycache__/
+*/__pycache__/
+migrations/
+
+discografia/.idea/
+
+discografia/core/__pycache__/
+
+discografia/disco/__pycache__/
+
+discografia/discografia.db

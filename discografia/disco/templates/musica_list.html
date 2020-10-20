@@ -1,0 +1,40 @@
+
+{% extends "base.html" %}
+
+{% block musicas %}
+<div class="container-fluid" id="table-musica">
+    <table class="table table-dark">
+        <thead>
+            <tr>
+                <th scope="col">Musica</th>
+                <th scope="col">Banda</th>
+                <th scope="col">Album</th>
+                <th scope="col">Tempo</th>
+                <th scope="col">Editar</th>
+                <th scope="col">Deletar</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for musicas in musica_list %}
+            <tr>
+                <th scope="row">{{musicas.titulo}}</th>
+                <td>{{musicas.album.banda}}</td>
+                <td>{{musicas.album}}</td>
+                <td>{{musicas.segundos}} Segundos</td>
+                <td>
+                    <li>
+                        <a class="fas fa-edit" id="icon_edit" href="{% url 'disco:musica_edit' musicas.id %}"></a>
+                    </li>
+
+                </td>
+                <td>
+                    <li>
+                        <a class="fas fa-trash-alt" id="icon_trash" href="{% url 'disco:musica_delete'  musicas.id %}"></a>
+                    </li>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

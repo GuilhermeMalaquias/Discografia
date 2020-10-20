@@ -1,0 +1,136 @@
+h1{
+    font-weight: bold;
+}
+.container-fluid{
+padding: 0%;
+}
+li {
+    list-style: none;
+}
+tr {
+    text-transform: uppercase;
+    
+}
+td {
+    color: #c8c8c8;
+}
+.navbar {
+    background-color: #c8c8c8;
+    width: 100%;
+}
+
+#icon_trash {
+    color: #ff0000;
+}
+#icon_edit {
+    color: #00c800;
+}
+#icon-linkedin {
+    list-style: none;
+}
+#icon-gmail {
+    list-style: none;
+}
+#icon-facebook {
+    list-style: none;
+}
+main {
+    height: 100%;
+    padding: 0%;
+}
+footer {
+    position: fixed;
+    color: #ffffff;
+    bottom: 100%;
+}
+
+.page-footer {
+    background-color: #1b1b1b;
+    padding: 0%;
+    position: relative;
+    z-index: 999;
+    bottom: 0;
+    border: 2px solid #ffffff;
+
+}
+.footer-copyright {
+    background: #000000;
+    font-style: italic;
+    padding: 0%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 999;
+    height: 100%;
+}
+
+#redes_sociais {
+    text-align: center;
+}
+.icon_menu li{
+    display: inline;
+    margin: 10px;
+}
+.icon_menu li a i{
+    size: 40px;
+}
+#icon-linkedin {
+    color: #c8c8c8;
+    size: 70px;
+}
+
+#icon-git {
+    color: #c8c8c8;
+    size: 70px;
+}
+#icon-ig {
+    color: #c8c8c8;
+    size: 70px;
+}
+.row{
+    width: 100%;
+}
+#cop{
+    background: #000000;
+}
+.musicas{
+    border-left: 2px;
+}
+#myChart {
+    background-color: #ffffff
+}
+
+#form_music {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #666666;
+    color: #ffffff;
+    height: 80vh;
+    width: 100%;
+}
+
+#bnt-salvar{
+    background-color: #393b41;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+#conter-index{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #666666;
+    color: #ffffff;
+}
+.form-group {
+    margin-top: 1rem;
+}
+
+#table-musica{
+    height: 100%;
+}
+.table{
+    margin-bottom: 0;
+}
